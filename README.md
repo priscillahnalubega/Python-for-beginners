@@ -1,5 +1,6 @@
 # Python-for-beginners
 Documenting Python learning journey
+<h1>Indroduction</h1>
 <p>Programmers can create code in :
 <ul>
   <li>Object oriented</li>
@@ -22,4 +23,10 @@ Documenting Python learning journey
   <li>System level programming</li>
   <li>Memory intensive software</li>
   </ul>
+  <p><b>Importance of python</b></p>
+  <ul>
+    <li>Python is a cutting-edge programming language that is object-oriented and can be interpreted</li>
+    <li>It is utilized in interactive scripting</li>
+  </ul>
+  <p><b> Industry use for python </b></p>
   
