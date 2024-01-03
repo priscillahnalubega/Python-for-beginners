@@ -1,2 +1,2 @@
 # Python-for-beginners
-Documenting python learning journey
+Documenting Python learning journey
