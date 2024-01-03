@@ -1,6 +1,6 @@
 # Python-for-beginners
 Documenting Python learning journey
-<h1>Indroduction</h1>
+<h1>Introduction</h1>
 <p>Programmers can create code in :
 <ul>
   <li>Object oriented</li>
