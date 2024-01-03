@@ -29,4 +29,18 @@ Documenting Python learning journey
     <li>It is utilized in interactive scripting</li>
   </ul>
   <p><b> Industry use for python </b></p>
+  <UL>
+    <li>Study of data</li>
+    <li>Calculations in sciences and mathematics</li>
+    <li>The building blocks of a game</li>
+    <li>Developing for the web</li>
+    <li>Commerce and financing dealings</li>
+    <li>Scripting for both general and application-specific nature</li>
+    <li>Automation systems and administrative management</li>
+    <li>Graphics created on a computter</li>
+    <li>Categraphy and geography(Often using GIS software)</li>
+    <li>Examining of vulnerabilities in Security systems</li>
+  </UL>
+  
+  
   
