@@ -1,6 +1,6 @@
 # Python-for-beginners
 Documenting Python learning journey
-<h1>Introduction</h1>
+<h1>1:Introduction</h1>
 <p>Programmers can create code in :
 <ul>
   <li>Object oriented</li>
@@ -41,6 +41,9 @@ Documenting Python learning journey
     <li>Categraphy and geography(Often using GIS software)</li>
     <li>Examining of vulnerabilities in Security systems</li>
   </UL>
+ <h1>2: Basic fundamentals of Python</h1> 
+ <h2>Syntax</h2>
+ <P>A syntax of a language refers to its structure or to the componets that go into producing a well-formed programme</P>
   
   
   
