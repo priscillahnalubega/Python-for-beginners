@@ -43,7 +43,8 @@ Documenting Python learning journey
   </UL>
  <h1>2: Basic fundamentals of Python</h1> 
  <h2>Syntax</h2>
- <P>A syntax of a language refers to its structure or to the componets that go into producing a well-formed programme</P>
+ <P>A syntax of a language refers to its structure or to the components that go into producing a well-formed programme</P>
+ 
   
   
   
