@@ -51,19 +51,19 @@ Python finds its applications in:
 The syntax of a language refers to its structure or to the components that go into producing a well-formed program. 
 Python's syntax is renowned for its readability and simplicity, making it an excellent language for beginners. In this document, I will cover the fundamental elements of Python syntax that I have learned so far.
 ### Indentation
-'''
+```python
 if condition:
     # Indented Block of Code
-'''   
+```  
    
 -Python uses indentation to define code blocks.
 -The use of tabs or spaces (consistent use is important) signifies a block of code</li>
 
 ### Variables and Data types
-'''
+```python
 number = 10        # An integer assignment
 name = "John Doe"  # A string assignment
-'''
+```
 
 
 
