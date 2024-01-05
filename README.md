@@ -56,8 +56,8 @@ if condition:
     # Indented Block of Code
 ```  
    
--Python uses indentation to define code blocks.
--The use of tabs or spaces (consistent use is important) signifies a block of code</li>
+- Python uses indentation to define code blocks.
+- The use of tabs or spaces (consistent use is important) signifies a block of code</li>
 
 ### Variables and Data types
 ```python
