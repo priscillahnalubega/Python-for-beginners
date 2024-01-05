@@ -60,11 +60,86 @@ if condition:
 - The use of tabs or spaces (consistent use is important) signifies a block of code</li>
 
 ### Variables and Data types
+Variables and data types in Python are value pairs that may change at any point  during the execution of the program.
+
 ```python
 number = 10        # An integer assignment
 name = "John Doe"  # A string assignment
+height = 5.4       # A float assignment
 ```
+- Variables are assigned with the variable name on the left and the value on the right of the equals sign.
+- Python is dynamically typed, so you don't declare the type of a variable.
+### Operators
+```python
+# Arithmetic operators
+sum = 7 + 3
+difference = 7 - 3
 
+# Assignment operators
+x = 10
+x += 3
+
+# Comparison operators
+if x == 13:
+    # Do something
+```
+- Python includes various types of operators like arithmetic, assignment, and comparison operators.
+### Control Flow Statements
+```python
+# If statement
+if x < 10:
+    print("Less than 10")
+elif x == 10:
+    print("Equal to 10")
+else:
+    print("Greater than 10")
+
+# While loop
+while x < 15:
+    print(x)
+    x += 1
+
+# For loop
+for i in range(5):
+    print(i)
+```
+- Control flow statements, like if, elif, else, while, and for, control the execution of code based on conditions.
+#### Functions
+```python
+def greet(name):
+    return "Hello, " + name
+```
+- Functions are defined using the def keyword.
+- They can take arguments and return values.
+### Classes and Objects
+```python
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+    def greet(self):
+        return "Hello, " + self.name
+
+person = Person("John")
+print(person.greet())
+```
+- Python supports object-oriented programming with classes and objects.
+### Importing Modules
+```python
+import math
+print(math.sqrt(16))
+```
+- Use the import statement to include the functionality of external modules.
+### Exception Handling
+```python
+try:
+    # Code that might cause an exception
+except ExceptionType:
+    # Code to handle the exception
+finally:
+    # Code that runs no matter what
+````
+try, except, finally, and raise are used for handling exceptions.
 
 
 
