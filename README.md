@@ -141,7 +141,12 @@ finally:
 ````
 try, except, finally, and raise are used for handling exceptions.
 
-###    Advanced File and Data Management
+##    Advanced File and Data Management
+### File access modes in Python
+1. Read only ('r'): This mode opens a text file for only reading. The file handle is poised at the outset of the file. If the file doesn't exist, an I/O error is raised.
+2. Read and write ('r+'): 
+
+
 
 
 
