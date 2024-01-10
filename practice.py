@@ -20,3 +20,10 @@ x, y = 2, 6
 x, y = y, x+2
 print (x,y)
 
+#What will be the output of the following program
+a, b = 2, 3
+c = a
+b = c + 1
+
+print(a, b, c)
+
