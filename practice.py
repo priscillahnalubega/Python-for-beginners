@@ -27,3 +27,7 @@ b = c + 1
 
 print(a, b, c)
 
+#Functions
+def square(x):
+    return x*x
+square (5)
