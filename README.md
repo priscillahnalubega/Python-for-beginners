@@ -146,6 +146,7 @@ try, except, finally, and raise are used for handling exceptions.
 1. Read only ('r'): This mode opens a text file for only reading. The file handle is poised at the outset of the file. If the file doesn't exist, an I/O error is raised.
 2. Read and write ('r+'): In this mode the file is opened for both reading and writing, with the handled position at the beginning of the file. An I/O error is raised if the file is missing.
 3. Writing only ('w'): When a file is opened in this mode its specifically for writing purposes.
+4. 
 
 
 
