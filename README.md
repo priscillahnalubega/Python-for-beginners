@@ -148,7 +148,9 @@ try, except, finally, and raise are used for handling exceptions.
 3. Writing only ('w'): When a file is opened in this mode its specifically for writing purposes.
 4. Write and read ('w+'):
 5. Append ('a'):
-6. 
+6. A
+
+### Object Oriented Programming 
 
 
 
