@@ -148,7 +148,10 @@ try, except, finally, and raise are used for handling exceptions.
 3. Writing only ('w'): When a file is opened in this mode its specifically for writing purposes.
 4. Write and read ('w+'): similar to 'w', Enables both writing and reading. It truncates and overwrites existing data if the file exists.
 5. Append only  ('a'): This mode is meant for writing  and also creating files incase they are absent.The file handle is located at the end of the file, and newly written datais appended after the existing content.
-6. Append and read ('a+):   
+6. Append and read ('a+'):  This mode is both for writing and reading. It opens the file for both operations, creating the file if its necessary, The file handle can be found at the end of the file, and new data can be appended after existing data.
+
+### How files are Loaded into Primary Memory
+
 
 ### Object Oriented Programming 
 
