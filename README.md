@@ -151,8 +151,12 @@ try, except, finally, and raise are used for handling exceptions.
 6. Append and read ('a+'):  This mode is both for writing and reading. It opens the file for both operations, creating the file if its necessary, The file handle can be found at the end of the file, and new data can be appended after existing data.
 
 ### How files are Loaded into Primary Memory
+Computers have two forms of memory, i.e : Primary memory and secondary memory.
+Primary memory loses it contents when the computer is switched off.
+Secondary memory refers to any saved file.
 
-
+In order to handle a text file in python or effect any changes, the file must be loaded into primary memory.
+-Python interacts with files in primary memory through 'File Handlers' which serve as conduits which allow python to interact with the file.
 ### Object Oriented Programming 
 
 
