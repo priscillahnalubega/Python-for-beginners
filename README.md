@@ -147,7 +147,7 @@ try, except, finally, and raise are used for handling exceptions.
 2. Read and write ('r+'): In this mode the file is opened for both reading and writing, with the handled position at the beginning of the file. An I/O error is raised if the file is missing.
 3. Writing only ('w'): When a file is opened in this mode its specifically for writing purposes.
 4. Write and read ('w+'): similar to 'w', Enables both writing and reading. It truncates and overwrites existing data if the file exists.
-5. Append only  ('a'):
+5. Append only  ('a'): This mode is meant for writing  and also creating files incase they are absent.The file handle is located at the end of the file, and newly written datais appended after the existing content.
 6. Append and read ('a+):   
 
 ### Object Oriented Programming 
