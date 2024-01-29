@@ -159,6 +159,8 @@ In order to handle a text file in python or effect any changes, the file must be
 -Python interacts with files in primary memory through 'File Handlers' which serve as conduits which allow python to interact with the file.
 
 
+
+
 ### Object Oriented Programming 
 
 
