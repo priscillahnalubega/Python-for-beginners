@@ -162,7 +162,7 @@ In order to handle a text file in python or effect any changes, the file must be
 The open() function is used to open a file.
 The syntax for openning a file is :
 ```
-File object = open (r"File_Name", "Access mode" )
+File object = open (r"File_Name", "Access mode")
 
 ```
 
