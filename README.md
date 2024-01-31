@@ -180,4 +180,6 @@ The letter r is inserted before the file name so that every character in the fil
 
 
 
+
+
 _This document is a part of my ongoing journey with Python and will be regularly updated. Feel free to contribute or provide feedback!_
