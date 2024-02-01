@@ -171,9 +171,14 @@ If the file is located in the same location, and its address is not being insert
 
 ```python
 #open function to open the file. "Myfile1.txt"
-#Same directory in Append mode
-open("MyFile1.txt", "a")
+#Same directory in Append mode and store its reference in variable file1
+file1 = open("MyFile1.txt", "a")
 ```
+```python
+#"MyFile2.txt" in D:\Text in file2
+file2 = open(r"D:\Text\MyFile2.txt","w+")
+```
+
 
 
 
