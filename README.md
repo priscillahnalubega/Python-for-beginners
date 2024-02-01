@@ -152,14 +152,14 @@ try, except, finally, and raise are used for handling exceptions.
 
 ### How files are Loaded into Primary Memory
 Computers have two forms of memory, i.e : Primary memory and secondary memory.
-Primary memory loses it contents when the computer is switched off.
+Primary memory or RAM (Random Access Memory) loses it contents when the computer is switched off.
 Secondary memory refers to any saved file.
 
 In order to handle a text file in python or effect any changes, the file must be loaded into primary memory.
 -Python interacts with files in primary memory through 'File Handlers' which serve as conduits which allow python to interact with the file.
 
 ### Opening a File 
-The open() function is used to open a file.
+The open() function: creates a connection between your file on the disk and your program. This allows your program to read from or write to the file. 
 The syntax for openning a file is :
 ```
 File object = open (r"File_Name", "Access mode")
@@ -167,7 +167,13 @@ File object = open (r"File_Name", "Access mode")
 ```
 If the file is not located in the same directory as the Python program file,its complete address should be given in the lieu of the file name. The file should exist  in the same folder as the python program file. 
 The letter r is inserted before the file name so that every character in the filename  string is not interpreted as a special character.
+If the file is located in the same location, and its address is not being inserted, the r maybe regarded as unnecessary.
 
+```python
+#open function to open the file. "Myfile1.txt"
+#Same directory in Append mode
+open("MyFile1.txt", "a")
+```
 
 
 
