@@ -340,7 +340,54 @@ To get comfortable with JSON and XML in Python, you can try the following exerci
 3. **Data Conversion Exercise**:
    - Convert JSON data to XML and vice versa. For instance, read data from a JSON file, convert it into an XML format, and write it to a new XML file.
 
-T
+### Understanding Advanced Object Oriented Programming
+OOP is a style in python and can be implemented by use of classes and objects.
+
+### Classes and Objects in Python:
+
+1. **Classes**: A class in Python is like a blueprint for creating objects. It defines a set of attributes (variables) and methods (functions) that the objects created from the class can have.
+
+2. **Objects**: An object is an instance of a class. When a class is defined, no memory is allocated until an object of that class is created.
+
+#### Defining a Class:
+To define a class in Python, you use the `class` keyword. Here's a simple example:
+
+```python
+class Dog:
+    def __init__(self, name, breed):
+        self.name = name
+        self.breed = breed
+
+    def bark(self):
+        return f"{self.name} says woof!"
+```
+
+- `__init__` is a special method called a constructor. It's called when an object is created from a class and allows the class to initialize the attributes of the class.
+
+#### Creating an Object:
+To create an object, you call the class as if it were a function, passing the arguments that the `__init__` method expects.
+
+```python
+my_dog = Dog("Rex", "Golden Retriever")
+```
+
+- `my_dog` is an instance of the `Dog` class, with `name` as "Rex" and `breed` as "Golden Retriever".
+
+#### Using Object Methods and Attributes:
+You can access attributes and call methods on objects using dot notation.
+
+```python
+print(my_dog.name)       # Accessing attribute
+print(my_dog.bark())     # Calling method
+```
+
+### Questions for Understanding:
+- Can you explain what `self` represents in the class definition?
+- If you were to create a method within the `Dog` class that returns the breed of the dog, how would you do it?
+- How would you create another object of the `Dog` class with different attributes?
+
+Understanding these basics is crucial before moving on to more complex concepts. Feel free to ask questions or try writing your own class to solidify your understanding!
+
 
 
 
