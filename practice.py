@@ -130,3 +130,82 @@ class Rectangle:
 rectangle1 = Rectangle(100, 30)
 print(rectangle1.area())
 print(rectangle1.perimeter())
+
+""" 
+
+### Exercise: Movie Theater Seat Booking System
+
+**Objective**: Create a `Theater` class that represents a small movie theater. The theater will have a fixed number of seats, and you should be able to book a seat, check if a seat is available, and cancel a booking.
+
+#### Step 1: Define the Class
+1. **Attributes**:
+   - `seats`: A list or dictionary to represent the seats in the theater. Each seat can be either "available" or "booked".
+
+2. **Methods**:
+   - `book_seat(seat_number)`: Method to book a specific seat if it's available. If the seat is already booked, print a message indicating that the booking is unsuccessful.
+   - `cancel_booking(seat_number)`: Method to cancel the booking of a specific seat.
+   - `check_availability(seat_number)`: Method to check if a specific seat is available.
+   - `get_available_seats()`: Method to return the number of available seats.
+
+#### Step 2: Create and Test the Class
+- Create an instance of `Theater` with a certain number of seats.
+- Perform some bookings and cancellations.
+- Check the availability of specific seats and the total number of available seats.
+
+#### Example Code Structure
+```python
+class Theater:
+    def __init__(self, total_seats):
+        # Initialize the seats
+
+    def book_seat(self, seat_number):
+        # Add code to book a seat
+
+    def cancel_booking(self, seat_number):
+        # Add code to cancel a booking
+
+    def check_availability(self, seat_number):
+        # Add code to check if a seat is available
+
+    def get_available_seats(self):
+        # Add code to get the number of available seats
+
+# Testing the class
+theater = Theater(20)  # A theater with 20 seats
+theater.book_seat(5)
+theater.cancel_booking(10)
+print(f"Available seats: {theater.get_available_seats()}")
+```
+
+"""
+
+class Theater:
+    def __init__(self, total_seats):
+        self.seats = ["available"] * total_seats
+
+    def book_seat(self, seat_number):
+        if self.seats[seat_number] == "available":
+            self.seats[seat_number] = "booked"
+            print(f"Seat {seat_number} successfully booked.")
+        else:
+            print(f"Seat {seat_number} is already booked.")
+
+    def cancel_booking(self, seat_number):
+        if self.seats[seat_number] == "booked":
+            self.seats[seat_number] = "available"
+            print(f"Booking for seat {seat_number} cancelled.")
+        else:
+            print(f"Seat {seat_number} is already available.")
+
+    def check_availability(self, seat_number):
+        return "available" if self.seats[seat_number] == "available" else "booked"
+
+    def get_available_seats(self):
+        return self.seats.count("available")
+
+# Testing the class
+theater = Theater(20)
+theater.book_seat(5)
+theater.cancel_booking(10)
+print(theater.check_availability(5))
+print(f"Available seats: {theater.get_available_seats()}")
