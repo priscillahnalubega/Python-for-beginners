@@ -33,6 +33,7 @@ def square(x):
 square (5)
 
 """
+#OOP
 Exercise: Bank Account Class
 Objective: Create a BankAccount class to represent a user's bank account. It should allow deposits, withdrawals, and provide the account balance.
 
@@ -51,8 +52,7 @@ Create an instance of BankAccount for a user.
 Perform some deposits and withdrawals.
 Check the balance.
 Example Code Structure
-python
-Copy code
+
 class BankAccount:
     def __init__(self, account_holder):
         self.account_holder = account_holder
