@@ -381,12 +381,7 @@ print(my_dog.name)       # Accessing attribute
 print(my_dog.bark())     # Calling method
 ```
 
-### Questions for Understanding:
-- Can you explain what `self` represents in the class definition?
-- If you were to create a method within the `Dog` class that returns the breed of the dog, how would you do it?
-- How would you create another object of the `Dog` class with different attributes?
 
-Understanding these basics is crucial before moving on to more complex concepts. Feel free to ask questions or try writing your own class to solidify your understanding!
 
 
 
