@@ -422,6 +422,58 @@ account.get_balance()
 
 
 
+### Inheritance in Python
+
+Inheritance allows us to define a class that inherits all the methods and properties from another class. This is useful for creating a new class with some additions or changes to the behavior of the original class.
+
+#### Basic Concepts:
+
+1. **Parent Class (Base Class)**: The class being inherited from.
+2. **Child Class (Derived Class)**: The class that inherits from another class.
+
+#### Key Features:
+
+- **Reuse Code**: Avoid duplication by inheriting common functionality from a parent class.
+- **Extend Functionality**: Add or override methods in the child class.
+- **Polymorphism**: Method overriding allows child classes to implement parent class methods differently.
+
+#### Example:
+
+Let's say we have a `Vehicle` class (as a parent class) and we want to create a `Car` class that inherits from it (as a child class).
+
+```python
+# Parent Class
+class Vehicle:
+    def __init__(self, make, model):
+        self.make = make
+        self.model = model
+
+    def display_info(self):
+        return f"Vehicle: {self.make} {self.model}"
+
+# Child Class
+class Car(Vehicle):
+    def __init__(self, make, model, horsepower):
+        super().__init__(make, model)
+        self.horsepower = horsepower
+
+    def display_car_info(self):
+        return f"{self.display_info()}, Horsepower: {self.horsepower}"
+```
+
+In this example:
+- `Car` inherits from `Vehicle`.
+- `Car` extends `Vehicle` by adding a new attribute (`horsepower`) and a new method (`display_car_info`).
+- `super().__init__(make, model)` is used to call the constructor of the parent class.
+
+### Small Project Idea
+
+Let's consider a small project where we can use classes, objects, and inheritance. How about a simple system to manage a library? We can have a base class representing `Books`, and derived classes for different genres like `Fiction`, `NonFiction`, etc., each with some specific attributes or methods.
+
+
+
+
+
 
 
 
