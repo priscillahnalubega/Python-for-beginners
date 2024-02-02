@@ -98,3 +98,35 @@ account = BankAccount("Alice")
 account.deposit(100)
 account.withdraw(50)
 account.get_balance()
+"""
+#Exercise: Rectangle Class
+Objective: Create a Rectangle class that represents a rectangle and can calculate its area and perimeter.
+
+Step 1: Define the Class
+Attributes:
+
+length: The length of the rectangle.
+width: The width of the rectangle.
+Methods:
+
+area(): Method to calculate and return the area of the rectangle.
+perimeter(): Method to calculate and return the perimeter of the rectangle.
+Optionally, a method to represent the rectangle's details as a string (like __str__).
+Step 2: Create and Test the Class
+Create an instance of Rectangle with specific length and width.
+Calculate and print the area and perimeter of the rectangle.
+
+"""
+class Rectangle:
+     def __init__(self,length, widith):
+         self.length = length
+         self.widith = widith
+     
+     def area(self):
+         return self.length * self.widith
+     def perimeter(self):
+         return 2*self.length + 2*self.widith
+     
+rectangle1 = Rectangle(100, 30)
+print(rectangle1.area())
+print(rectangle1.perimeter())
