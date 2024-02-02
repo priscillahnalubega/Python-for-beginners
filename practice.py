@@ -31,3 +31,45 @@ print(a, b, c)
 def square(x):
     return x*x
 square (5)
+
+"""
+Exercise: Bank Account Class
+Objective: Create a BankAccount class to represent a user's bank account. It should allow deposits, withdrawals, and provide the account balance.
+
+Step 1: Define the Class
+Attributes:
+
+account_holder: The name of the account holder.
+balance: The current balance of the account (initialized to zero).
+Methods:
+
+deposit(amount): Method to add funds to the account. It should also print the amount deposited and the new balance.
+withdraw(amount): Method to subtract funds from the account if sufficient balance exists. It should also print the amount withdrawn and the new balance.
+get_balance(): Method to print the current balance.
+Step 2: Create and Test the Class
+Create an instance of BankAccount for a user.
+Perform some deposits and withdrawals.
+Check the balance.
+Example Code Structure
+python
+Copy code
+class BankAccount:
+    def __init__(self, account_holder):
+        self.account_holder = account_holder
+        self.balance = 0
+
+    def deposit(self, amount):
+        # Add code for deposit
+
+    def withdraw(self, amount):
+        # Add code for withdrawal
+
+    def get_balance(self):
+        # Add code to display balance
+
+# Testing the class
+account = BankAccount("Alice")
+account.deposit(100)
+account.withdraw(50)
+account.get_balance()
+"""
