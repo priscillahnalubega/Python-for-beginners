@@ -209,3 +209,36 @@ theater.book_seat(5)
 theater.cancel_booking(10)
 print(theater.check_availability(5))
 print(f"Available seats: {theater.get_available_seats()}")
+
+# Let's consider a small project where we can use classes, objects, and inheritance. How about a simple system to manage a library? We can have a base class representing `Books`, and derived classes for different genres like `Fiction`, `NonFiction`, etc., each with some specific attributes or methods.
+
+class Book:
+    def __init__(self,title, author, isbn):
+        self.title =title
+        self.author = author
+        self.isbn = isbn
+        
+    def display_info(self):
+        return f"{self.title} by {self.author} with {self.isbn}"
+    
+class Fiction(Book):
+    def __init__(self, title, author,isbn, genre):
+        super().__init__(title,author,isbn)
+        self.genre = genre
+    def display_info(self):
+        return f"{super().display_info()}, Genre: {self.genre}"
+    
+class NonFiction(Book):
+    def __init__(self, title, author,isbn, subject):
+        super().__init__(title,author,isbn)
+        self.subject = subject
+    def display_info(self):
+        return f"{super().display_info()}, Subject: {self.subject}"
+
+# Creating book instances
+fiction_book = Fiction("1984", "George Orwell", "123456789", "Dystopian")
+nonfiction_book = NonFiction("A Brief History of Time", "Stephen Hawking", "987654321", "Science")
+
+# Displaying book information
+print(fiction_book.display_info())
+print(nonfiction_book.display_info())
