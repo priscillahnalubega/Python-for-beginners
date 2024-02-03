@@ -612,7 +612,74 @@ Composition here provides a flexible way to manage different types of library it
 
 
 
+### Magic Methods in Python
 
+Magic methods, also known as dunder (double underscore) methods, are special methods that begin and end with double underscores (`__`). They allow you to define how objects of your classes behave with built-in functions and operators. Magic methods enable you to emulate the behavior of built-in types or implement functionality that's not directly accessible to your class objects.
+
+#### Key Magic Methods:
+
+1. **`__init__(self, ...)`: Constructor for initializing a new object.
+2. **`__str__(self)`: Called by the `str(object)` built-in function and by the `print` function to compute the “informal” string representation of an object.
+3. **`__repr__(self)`: Called by the `repr(object)` built-in function to compute the “official” string representation of an object.
+4. **`__len__(self)`: Implements the built-in function `len()`.
+5. **`__add__(self, other)`, `__sub__(self, other)`, etc.: Allow objects of your class to be used with arithmetic operators like `+`, `-`, etc.
+
+#### Example of Magic Methods:
+
+Let's add a `__str__` method to the `Book` class in our library management system to define how books are represented as strings.
+
+```python
+class Book:
+    def __init__(self, title, author):
+        self.title = title
+        self.author = author
+
+    def __str__(self):
+        return f"Book: {self.title} by {self.author}"
+
+# Creating a book instance
+book = Book("1984", "George Orwell")
+
+# Using the __str__ magic method
+print(book)  # "Book: 1984 by George Orwell"
+```
+
+In this example, the `__str__` method provides a human-readable representation of the `Book` object, which is used when you print a `Book` instance.
+
+.
+
+### Decorators in Python
+
+A decorator in Python is a function that takes another function as its argument, and returns yet another function. Decorators can be used to extend or alter the behavior of the wrapped function or method.
+
+#### Key Features of Decorators:
+
+1. **Enhancing Functionality**: Decorators can add functionality to existing functions or methods. They are applied using the `@decorator_name` syntax above a function definition.
+
+2. **Code Reusability**: Since decorators are functions, they can be reused. This is particularly useful in large applications where certain behaviors (like logging or access control) need to be consistently applied across many functions.
+
+3. **Separation of Concerns**: Decorators help in keeping the code clean by separating the core functionality from the auxiliary functionality.
+
+#### Example of a Simple Decorator:
+
+Let's create a simple decorator that prints a message before and after the execution of a function.
+
+```python
+def my_decorator(func):
+    def wrapper():
+        print("Something is happening before the function is called.")
+        func()
+        print("Something is happening after the function is called.")
+    return wrapper
+
+@my_decorator
+def say_hello():
+    print("Hello!")
+
+say_hello()
+```
+
+In this example, `my_decorator` is a decorator that takes a function `func` as an argument. It defines a nested function `wrapper` that prints messages before and after calling `func`. When we apply `@my_decorator` to `say_hello`, it effectively replaces `say_hello` with the `wrapper` function.
 
 
 
