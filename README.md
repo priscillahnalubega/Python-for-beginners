@@ -471,6 +471,147 @@ In this example:
 Let's consider a small project where we can use classes, objects, and inheritance. How about a simple system to manage a library? We can have a base class representing `Books`, and derived classes for different genres like `Fiction`, `NonFiction`, etc., each with some specific attributes or methods.
 
 
+### Polymorphism in Python
+
+Polymorphism is a key concept in OOP that allows objects to be treated as instances of their parent class rather than their actual class. The word "polymorphism" comes from Greek words meaning "many forms". It refers to the ability of different objects to respond in their own way to the same method call.
+
+#### Key Features of Polymorphism:
+
+1. **Method Overriding**: This is where a method in a child class has the same name and parameters as a method in the parent class. The child's method overrides the parent's method when called on an instance of the child class.
+
+2. **Duck Typing**: This is a Python-specific form of polymorphism where an object's suitability for a task is determined by the presence of certain methods and properties, rather than the type of object itself.
+
+#### Example of Polymorphism with Method Overriding:
+
+
+
+```python
+class Book:
+    def __init__(self, title, author, isbn):
+        self.title = title
+        self.author = author
+        self.isbn = isbn
+
+    def display_info(self):
+        return f"Book: {self.title} by {self.author}"
+
+class Fiction(Book):
+    def __init__(self, title, author, isbn, genre):
+        super().__init__(title, author, isbn)
+        self.genre = genre
+
+    def display_info(self):
+        return f"{super().display_info()}, Genre: {self.genre}"
+
+class NonFiction(Book):
+    def __init__(self, title, author, isbn, subject):
+        super().__init__(title, author, isbn)
+        self.subject = subject
+
+    def display_info(self):
+        return f"{super().display_info()}, Subject: {self.subject}"
+
+# Polymorphism in action
+books = [Fiction("1984", "George Orwell", "123456789", "Dystopian"),
+         NonFiction("A Brief History of Time", "Stephen Hawking", "987654321", "Science")]
+
+for book in books:
+    print(book.display_info())
+```
+
+In this example:
+- Each subclass of `Book` has its own implementation of `display_info`.
+- Even though each object in the `books` list is treated as a `Book`, calling `display_info` on them invokes the overridden method specific to their actual class (`Fiction` or `NonFiction`).
+
+This demonstrates polymorphism where the same method call (`display_info`) behaves differently depending on the object it's called on.
+
+
+### Encapsulation in Python
+
+Encapsulation is the practice of restricting access to certain parts of an object, such as attributes and methods, thus preventing data from being modified by accident. In Python, encapsulation is achieved using private and protected members.
+
+#### Key Features of Encapsulation:
+
+1. **Private Members**: In Python, private members (variables and methods) are denoted by prefixing the name with double underscores `__`. These members can only be accessed within the class and are not visible to derived classes or outside the class.
+
+2. **Protected Members**: Protected members are denoted by a single underscore `_`. They are not strictly private but are intended to be used as an indication that they should not be accessed unless inside a subclass.
+
+#### Example of Encapsulation:
+
+Let's add some encapsulation to our `Book` class by making `isbn` a private member and adding a method to access it safely.
+
+```python
+class Book:
+    def __init__(self, title, author, isbn):
+        self.title = title
+        self.author = author
+        self.__isbn = isbn  # Private member
+
+    def display_info(self):
+        return f"Book: {self.title} by {self.author}"
+
+    def get_isbn(self):  # Method to safely access private member
+        return self.__isbn
+
+# Testing encapsulation
+book = Book("1984", "George Orwell", "123456789")
+print(book.display_info())
+print(book.get_isbn())  # Accessing ISBN through a method
+```
+
+In this example, `__isbn` is a private member of the `Book` class. It cannot be accessed directly from outside the class. Instead, the `get_isbn` method provides controlled access to it.
+
+This practice of encapsulation ensures that the internal representation of an object is hidden from the outside. It allows the internal state of the object to be changed without affecting the ways that external code interacts with it.
+
+
+
+### Composition in Python
+
+Composition is a design principle where a class is made up of one or more objects from other classes, allowing for more complex structures. It's often used as an alternative to inheritance for building flexible and maintainable code, especially when one class needs to include functionalities of other classes.
+
+#### Key Features of Composition:
+
+1. **Building Complex Objects**: Composition allows a class to contain objects of different types, providing more flexibility in designing complex systems.
+
+2. **Code Reusability**: By using objects from other classes, you can reuse existing code, enhancing maintainability and reducing redundancy.
+
+3. **Loose Coupling**: Composition leads to loosely coupled systems where classes and objects are independent, making the system easier to manage.
+
+#### Example of Composition:
+
+Let's extend our library management system to include a `Library` class that is composed of various `LibraryItem` instances (like `Book`, `Magazine`, etc.).
+
+```python
+class Library:
+    def __init__(self):
+        self.items = []  # List to store library items
+
+    def add_item(self, item):
+        self.items.append(item)
+
+    def display_all_items(self):
+        for item in self.items:
+            print(item.display_info())
+
+# Assuming Book and Magazine classes are already defined
+
+# Creating a library and adding items
+library = Library()
+library.add_item(Book("1984", "George Orwell"))
+library.add_item(Magazine("Nature", "123"))
+
+# Displaying all items in the library
+library.display_all_items()
+```
+
+In this example:
+- The `Library` class is composed of a list of `LibraryItem` objects.
+- `Library` has methods to add items and display information about all items, leveraging the functionality of the `Book` and `Magazine` classes without inheriting from them.
+
+Composition here provides a flexible way to manage different types of library items, each with its unique characteristics, under a unified library system.
+
+
+
 
 
 
