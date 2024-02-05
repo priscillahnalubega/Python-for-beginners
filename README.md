@@ -681,6 +681,8 @@ say_hello()
 
 In this example, `my_decorator` is a decorator that takes a function `func` as an argument. It defines a nested function `wrapper` that prints messages before and after calling `func`. When we apply `@my_decorator` to `say_hello`, it effectively replaces `say_hello` with the `wrapper` function.
 
+## Popular Python Libraries
+
 
 
 
