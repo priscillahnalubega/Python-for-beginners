@@ -293,3 +293,5 @@ while True:
     else:
         print("Enter a valid operation.")
 
+# Practical python exercises
+        
