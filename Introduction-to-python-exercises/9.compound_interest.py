@@ -6,3 +6,11 @@ amount of money deposited into the account from the user. Then your program shou
 compute and display the amount in the savings account after 1, 2, and 3 years. Display
 each amount so that it is rounded to 2 decimal places.
 """
+p = float(input("Enter your principal amount in $: "))
+r= 4/100
+
+for t in range(1, 4):
+    total_amount = p * (1 + r) ** t
+    print(f"The total amount after {t} year{'s' if t > 1 else ''} is ${total_amount:.2f}")
+
+
