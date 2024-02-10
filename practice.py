@@ -294,4 +294,3 @@ while True:
         print("Enter a valid operation.")
 
 # Practical python exercises
-        
