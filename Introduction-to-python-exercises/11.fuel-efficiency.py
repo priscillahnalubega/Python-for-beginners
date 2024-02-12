@@ -7,7 +7,7 @@ units and displays the equivalent fuel efficiency in Canadian units
 def MPG_to_l_per_100km (MPG):
     return 235.214583 / MPG
 
-MPG = float(input("Enter fuel efficiecy in MPG"))
+MPG = float(input("Enter fuel efficiecy in MPG:"))
 
 l_per_100km = MPG_to_l_per_100km
 
