@@ -747,7 +747,8 @@ Each library has its own unique features and use cases, and learning them can si
 The practice exercises
 Introduction to Python exercises
 1. hello
-2. new 
+2. arithmetic
+3. fuel- efficiency
    
 
 
