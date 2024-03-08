@@ -751,9 +751,9 @@ In this section we are going to have practice challenges whose solutions can be 
 4. Distance
 5. 
 6.
-
 7.
 
+8.
 
 
 
