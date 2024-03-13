@@ -21,7 +21,7 @@ Ta = float(input("Enter the temperature of air in Degree Celcius: "))
 
 # Check for validity of the conditions
 if Ta <= 10 and V > 4.8:
-    # Calculating the wind Chill index correctly
+    # Calculating the wind Chill index 
     WCI = 13.12 + (0.6215 * Ta) - 11.37 * (V ** 0.16) + 0.3965 * Ta * (V ** 0.16)
     # Displaying the Wind Chill Index to the closest integer
     print(f"The wind chill index is: {round(WCI)}")
