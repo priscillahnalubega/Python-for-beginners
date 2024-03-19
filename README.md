@@ -752,6 +752,7 @@ A) Introduction to Python exercises folder.
 4. Distance
 
 B)iF Statements
+34. even or odd
 
 
 
