@@ -744,16 +744,17 @@ Python has a rich ecosystem of libraries that serve various purposes, from web d
 Each library has its own unique features and use cases, and learning them can significantly enhance your capabilities in Python programming, especially in fields like data science, web development, and machine learning.
 
 ## Python exercises 
-In this section, we are going to have practice challenges whose solutions can be found in the Introduction to Python exercises folder.
+In this section, we are going to have practice challenges whose solutions can be found in the 
+A) Introduction to Python exercises folder.
 1. hello
 2. Arithmetic
 3. fuel- efficiency
 4. Distance
-5. 
-6.
-7.
 
-8.
+B)If Statements
+34. even or odd
+35. Dog years
+36. Vowel or Constant
 
 
 
