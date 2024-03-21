@@ -751,8 +751,10 @@ A) Introduction to Python exercises folder.
 3. fuel- efficiency
 4. Distance
 
-B)iF Statements
+B)If Statements
 34. even or odd
+35. Dog years
+36. Vowel or Constant
 
 
 
