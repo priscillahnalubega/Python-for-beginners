@@ -762,7 +762,7 @@ Python control flow statements: break, continue
 41.
 42.today I got a pair programming partner, we start in 2 weeks.
 43.still literally stuck on if statements 
-
+long break due to severe headach
 
 
 
