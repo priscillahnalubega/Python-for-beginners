@@ -766,7 +766,7 @@ long break due to severe headach
 a very busy week ahead 
 ROAD MAP FOR DATA SCIENCE
 1.fundamentals
-2.
+2.rest day
 
 
 
