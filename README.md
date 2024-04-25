@@ -767,7 +767,8 @@ a very busy week ahead
 ROAD MAP FOR DATA SCIENCE
 1.fundamentals
 2.rest day
-3.scheduling
+3. scheduling
+4. first task
 
 
 
