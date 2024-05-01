@@ -1,4 +1,4 @@
-88# Python for Beginners: My Learning Journey
+# Python for Beginners: My Learning Journey
 
 ## 1. Introduction to Python
 
