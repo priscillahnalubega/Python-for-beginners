@@ -769,6 +769,7 @@ ROAD MAP FOR DATA SCIENCE
 2.rest day
 3. scheduling
 4. first task
+2.may
 
 
 
