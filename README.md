@@ -753,19 +753,7 @@ A) Introduction to Python exercises folder.
 
 B)If Statements
 Python control flow statements: break, continue
-34. even or odd
-35. Dog years
-36. Vowel or Constant
-37.stuck at if statements
-38. 
-40.
-41.
-42.today I got a pair programming partner, we start in 2 weeks.
-43.still literally stuck on if statements 
-long break due to severe headach
-a very busy week ahead 
-ROAD MAP FOR DATA SCIENCE
-1.fundamentals
+
 
 
 
