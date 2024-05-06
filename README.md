@@ -756,8 +756,8 @@ B)If Statements
 The types of loops in python that handle looping requirements include:
 - While Loops
 - For Loops
-- 
-
+# While loops
+Until a specified criterion is true, a block of statements will be continuously executed in a Python while loop and the line in the program that follows the loop is run when the condition changes to false.
 
 
 
