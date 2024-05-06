@@ -752,7 +752,12 @@ A) Introduction to Python exercises folder.
 4. Distance
 
 B)If Statements
-Python control flow statements: break, continue
+## Python control flow statements: break, continue
+The types of loops in python that handle looping requirements include:
+- While Loops
+- For Loops
+- 
+
 
 
 
