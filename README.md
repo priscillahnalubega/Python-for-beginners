@@ -764,7 +764,13 @@ Until a specified criterion is true, a block of statements will be continuously 
 while expression:
     statement(s)
 ```
-
+```Python
+# prints Hello Geek 3 Times
+count = 0
+while (count < 3):    
+    count = count+1
+    print("Hello World")
+```
 
 
 
