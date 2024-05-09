@@ -765,7 +765,7 @@ while expression:
     statement(s)
 ```
 ```Python
-# prints Hello Geek 3 Times
+# prints Hello world 3 Times
 count = 0
 while (count < 3):    
     count = count+1
