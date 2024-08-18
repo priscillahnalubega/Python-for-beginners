@@ -752,14 +752,28 @@ A) Introduction to Python exercises folder.
 4. Distance
 
 B)If Statements
-34. even or odd
-35. Dog years
-36. Vowel or Constant
+## Python control flow statements: break, continue
+The types of loops in python that handle looping requirements include:
+- While Loops
+- For Loops
+# While loops
+Until a specified criterion is true, a block of statements will be continuously executed in a Python while loop. The line in the program that follows the loop is run when the condition changes to false.
 
+# Syntax of Python While
+```python
+while expression:
+    statement(s)
+```
+```Python
+# prints Hello world 3 Times
+count = 0
+while (count < 3):    
+    count = count+1
+    print("Hello World")
+```
+loops
 
-
-
-
+After a long break I have embarked on learning Machine learning for a project
 
 
 
